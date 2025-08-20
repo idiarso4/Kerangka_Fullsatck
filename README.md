@@ -1,6 +1,6 @@
 # Aplikasi Stack Indonesia
 
-Proyek ini dibuat dengan [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), sebuah stack TypeScript modern yang menggabungkan React, TanStack Router, Hono, TRPC, dan lainnya.
+Proyek ini dibuat dengan  stack TypeScript modern yang menggabungkan React, TanStack Router, Hono, TRPC, dan lainnya.
 
 ## Fitur-Fitur
 
@@ -86,3 +86,5 @@ aplikasi-stack-indonesia/
 - `cd apps/web && npm run desktop:build`: Build aplikasi desktop Tauri
 - `cd apps/docs && npm run dev`: Jalankan situs dokumentasi
 - `cd apps/docs && npm run build`: Build situs dokumentasi
+
+============== By Pak-Idi_Skansapung ===================
