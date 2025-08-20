@@ -1,0 +1,36 @@
+---
+title: Selamat Datang di Stack Indonesia
+description: Mulai membangun situs dokumentasi Anda dengan Stack Indonesia.
+template: splash
+hero:
+  tagline: Selamat! Anda telah berhasil mengatur proyek Stack Indonesia yang baru!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Panduan Contoh
+      link: /guides/example/
+      icon: right-arrow
+    - text: Baca dokumentasi Starlight
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Langkah Selanjutnya
+
+<CardGrid stagger>
+	<Card title="Perbarui konten" icon="pencil">
+		Edit `src/content/docs/index.mdx` untuk melihat perubahan halaman ini.
+	</Card>
+	<Card title="Tambah konten baru" icon="add-document">
+		Tambahkan file Markdown atau MDX ke `src/content/docs` untuk membuat halaman baru.
+	</Card>
+	<Card title="Konfigurasi situs Anda" icon="setting">
+		Edit `sidebar` dan konfigurasi lainnya di `astro.config.mjs`.
+	</Card>
+	<Card title="Baca dokumentasi" icon="open-book">
+		Pelajari lebih lanjut di [Dokumentasi Starlight](https://starlight.astro.build/).
+	</Card>
+</CardGrid>

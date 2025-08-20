@@ -1,0 +1,35 @@
+{
+  "name": "aplikasi-stack-indonesia",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "periksa": "biome check --write .",
+    "siapkan": "husky",
+    "dev": "turbo dev",
+    "bangun": "turbo build",
+    "periksa-tipe": "turbo check-types",
+    "dev:mobile": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:dorong": "turbo -F server db:push",
+    "db:studio": "turbo -F server db:studio",
+    "db:generate": "turbo -F server db:generate",
+    "db:migrasi": "turbo -F server db:migrate"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "@biomejs/biome": "^2.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --write ."
+    ]
+  },
+  "packageManager": "npm@10.8.2"
+}
